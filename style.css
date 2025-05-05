@@ -40,3 +40,60 @@ img.logo {
 ul.to-do li {
     padding-bottom: 0.3em;
 }
+
+/*Box*/
+.box {
+    height: 20vh;
+    width: 500px;
+    background: #ff00b1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+/*Pop-up*/
+.popup-wrapper {
+    display: none;
+}
+
+.popup-wrapper.showme {
+    display: flex;
+    top: 0;
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(10,10,10,0.5);
+    backdrop-filter: blur(10px);
+    align-items: center;
+    justify-content:center ;
+}
+
+.popup {
+    padding: 30px;
+    background-color: #222;
+    border: 0.5px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.close {
+    padding: 5px;
+    background: #333;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 5px;
+    position: relative;
+    left: 100px;
+    top: -15px;
+    margin-bottom: -50px;
+}
+.close:hover {
+    background-color: #444;
+}
