@@ -1,11 +1,42 @@
-.error {
-    color: red;
-    border: solid 2px red;
-    padding: 20px;
+body {
+    font-family: "Montserrat", arial, sans-serif;
+    background: #000;
+    color: #f1f1f1;
+}
+button {
+    border: 0.5px solid #f1f1f1;
+    background: transparent;
+    color: #f1f1f1;
+    padding: 1em;
+    font-family: "Montserrat", arial, sans-serif;
+}
+button:hover {
+    background: #f1f1f1;
+    color: #000;
+    cursor: pointer;
 }
 
-.success {
-    color: green;
-    border: solid 2px green;
-    padding: 20px;
+/*header*/
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.1em 0.5em;
+}
+.navi {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.navi a {
+    color: #f1f1f1;
+}
+img.logo {
+    min-height: 50px;
+}
+
+/* To do list*/
+ul.to-do li {
+    padding-bottom: 0.3em;
 }
